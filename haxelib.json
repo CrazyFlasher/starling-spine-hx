@@ -9,7 +9,7 @@
     "releasenote": "Improved repository structure & license type",
     "contributors": [ "dmn-chumak" ],
     "dependencies": {
-        "starling": "2.5.1",
-        "spine-hx": "3.6.0"
+        "starling": "",
+        "spine-hx": ""
     }
 }

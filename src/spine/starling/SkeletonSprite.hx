@@ -42,7 +42,11 @@ class SkeletonSprite extends DisplayObject {
         super();
 
         _skeleton = new Skeleton(skeletonData);
-        _skeleton.flipY = true;
+        #if (spine_hx <= "3.6.0")
+		skeleton.setFlipY(true);
+		#else
+        skeleton.setScaleY(-1);
+        #end
         _skeleton.updateWorldTransform();
 
         _smoothing = TextureSmoothing.BILINEAR;
